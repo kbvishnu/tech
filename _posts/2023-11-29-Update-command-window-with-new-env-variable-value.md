@@ -7,3 +7,8 @@ image: assets/images/17.jpg
 tags: [ sticky]
 ---
  
+
+ ```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
