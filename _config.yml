@@ -1,0 +1,61 @@
+# Site
+name: 'kayBee*'
+description: 'Tech logs- >Code>>Build>>Break>>Fix>>Deploy>>Disrupt>'
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
+baseurl: ''
+disqus: 'kay-bee'
+email: 'contact@kbvishnu.com'
+mailchimp-list: ''
+atitle: '::Tech logs::>Code>>Build>>Break>>Fix>>Deploy>>Disrupt>::' 
+lifeatitle: ::Life logs::>Food>>Travel>>Experience>>Capture>>Share>::'
+ 
+
+include: ["_pages"]
+permalink: /:title/
+
+# Plugins
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  
+authors:
+       
+    kaybee:
+      name:           KayBee
+      site:           https://www.kbvishnu.com
+      avatar:         assets/images/kayBee.jpg
+      bio:            "Son,Husband,Father,Full Stack Engineer, Petrolhead,Photographer, MovieBuff & Non Profit Professional. Disclaimer: The opinions expressed herein are my own personal opinions and do not represent my present or previous employer’s or any affiliated organization's view in any way."
+      email:          vishnu.balachandra@gmail.com
+      twitter:        https://twitter.com/vishnukb
+ 
+# Defaults
+defaults:
+
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: kayBee
+      avatar: /assets/images/kayBee.jpg
+      
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+      
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+# Paginate
+paginate: 10
+
+
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
